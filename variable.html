@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            * {
+                font-family: Helvetica;
+                font-size: 12px;
+            }
+
+            body {
+                background-color: hsl(41, 100%, 85%);
+                border: solid 3px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5%;
+                width:64%;
+                padding: 3%;
+            }
+            
+            a {
+                font-family: Helvetica;
+            }
+            
+            a.contact {
+                text-align: right;
+            }
+    
+            a:link, :visited {
+                color: rgb(18, 18, 18);
+                text-decoration: none;
+            }
+    
+            a.contact {
+                font-size:12px;
+                font-style: italic;
+                text-align: right;
+            }
+            a.baslik {
+                font-weight: 700;
+            }
+    
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            table, th, td, tr {
+                font-family: Helvetica;
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align:center;
+                vertical-align: middle;
+                padding: 2%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .contact {
+                position:fixed; bottom: 1%;
+                color: black;
+                font-style: italic;
+                }
+                
+            .contact-hr {
+                
+                width: 64%;
+                position: fixed; 
+                bottom: 3%;
+                border-bottom: 1px hidden black;
+                border-left: hidden;
+                border-right: hidden;
+                border-top: hidden;
+                border-collapse: collapse;
+                padding: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        </table><br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"><em>Tablo: C Dilindeki Değişkenlerin Değer Aralıkları</em></th>
+                </tr>
+                <tr>
+
+                    <th>Data Type</th>
+                    <th>Memory (bytes)</th>
+                    <th>Range</th>
+                    <th>Format Specifier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>short int</td>
+                    <td>2</td>
+                    <td>-32,768 to 32,767</td>
+                    <td>%hd</td>
+                </tr>
+                <tr>
+                    <td>unsigned short int</td>
+                    <td>2</td>
+                    <td>0 to 65,535</td>
+                    <td>%hu</td>
+                </tr>
+                <tr>
+                    <td>unsigned int</td>
+                    <td>4</td>
+                    <td>0 to 4,294,967,295</td>
+                    <td>%u</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>4</td>
+                    <td>-2,147,483,648 to 2,147,483,647</td>
+                    <td>%d</td>
+                </tr>
+                <tr>
+                    <td>long int</td>
+                    <td>4</td>
+                    <td>-2,147,483,648 to 2,147,483,647</td>
+                    <td>%ld</td>
+                </tr>
+                <tr>
+                    <td>unsigned long int</td>
+                    <td>4</td>
+                    <td>0 to 4,294,967,295</td>
+                    <td>%lu</td>
+                </tr>
+                <tr>
+                    <td>long long int</td>
+                    <td>8</td>
+                    <td>-(2^63) to (2^63)-1</td>
+                    <td>%lld</td>
+                </tr>
+                <tr>
+                    <td>unsigned long long int</td>
+                    <td>8</td>
+                    <td>0 to 18,446,744,073,709,551,615</td>
+                    <td>%llu</td>
+                </tr>
+                <tr>
+                    <td>signed char</td>
+                    <td>1</td>
+                    <td>-128 to 127</td>
+                    <td>%c</td>
+                </tr>
+                <tr>
+                    <td>unsigned char</td>
+                    <td>1</td>
+                    <td>0 to 255</td>
+                    <td>%c</td>
+                </tr>
+                <tr><td>float</td>
+                    <td>4</td>
+                    <td>1.2E-38 to 3.4E+38</td>
+                    <td>%f</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>8</td>
+                    <td>1.7E-308 to 1.7E+308</td>
+                    <td>%lf</td>
+                </tr>
+                <tr>
+                    <td>long</td>
+                    <td>16</td>
+                    <td>3.4E-4932 to 1.1E+4932</td>
+                    <td>%Lf</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <footer>
+        <a class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+    </footer>
+    <div id="end" style="font-size:0px;">.</div>
+</html>
+    
