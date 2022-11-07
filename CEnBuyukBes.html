@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        <ul>
+            <li>C Programlama dili ile girilen 5 sayıdan en büyüğünü bulma.</li><br>
+            <textarea>
+    
+    #include<stdio.h>
+    int main(){
+        int sayilar[5],i,j,temp;
+        for(i=0;i<5;i++){
+            printf("Sayi giriniz: ");
+            scanf("%d",&sayilar[i]);
+        }
+        for(i=0;i<5;i++){
+            for(j=0;j<5;j++){
+                if(sayilar[i]>sayilar[j]){
+                        temp=sayilar[i];
+                        sayilar[i]=sayilar[j];
+                        sayilar[j]=temp;
+                }
+            }
+        }
+        printf("sirali dizimiz: ");
+        for(i=0;i<5;i++){
+            printf("%d ",sayilar[i]);
+        }
+        printf("\nGirilen en buyuk sayi: %d",sayilar[0]);
+        return 0;
+    }
+            </textarea>
+        </ul>
+
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
