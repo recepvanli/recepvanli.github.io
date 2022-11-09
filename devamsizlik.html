@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi"  oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <header>
+            <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+            <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+            <a href="index.html" title="Homepage">ANASAYFA</a>
+        </header>
+        <div id="icerik">
+            <ul>
+                <li>Kullanıcıdan alınan bilgiler ışığında, öğrencinin sınava girip giremeyeceğinin kontrol edilmesi.</li>
+                <br><br>
+                    <textarea>
+                    
+    from time import sleep
+    print("Sınav Giriş İzni Sorgulama Programı")
+    sleep(1)
+    
+    while True:
+        while True:
+            dersSayisi = input("Düzenlenen ders sayısını giriniz: ")
+            devamli = input("Katıldığınız ders sayısını giriniz: ")
+            if dersSayisi == "q" or devamli == "q":
+                break
+            try:
+                dersSayisi = int(dersSayisi)
+                devamli = int(devamli)
+                break
+            except:
+                print("HATA! Sayısal değer giriniz!")
+        devamOrani = (devamli*100)/dersSayisi
+        print(f"Derse devam oranınız: {devamOrani:.2f} %")
+        if (devamOrani>=0) and (devamOrani < 75):
+            print("UYARI! Devam oranınız %75'in altındadır.")
+            while True:
+                tibbiNeden = input("Devamsızlığınızın tıbbi bir nedeni var mı?(e/h): ")
+                if tibbiNeden == "e":
+                    print("Sınava Girebilirsiniz.")
+                    sleep(2)
+                    quit()
+                elif tibbiNeden == "h":
+                    print("UYARI! Sınava Giremezsiniz")
+                    sleep(2)
+                    quit()
+                try:
+                    print ("HATA! 'e' veya 'h' tuşuna basınız!")
+                except:
+                    pass
+        elif dersSayisi < devamli:
+            print("HATA! Ders sayısından fazla derse katılamazsınız!")
+                        
+                    </textarea>
+                </li>
+            </ul>
+        </div>
+
+
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->

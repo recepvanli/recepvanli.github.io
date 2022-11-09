@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        <ul>
+            <li>Hipotenüsü 20cm'den küçük ve üç kenarı da tam sayı olan dik üçgenin kenarlarının alabileceği bütün değerleri hesaplayan program yazınız.</li>
+            <br><br>
+            <textarea>
+                
+    from math import sqrt
+    from time import sleep
+    i=0
+    a = []
+    b = []
+    for i in range (1,21):
+        a.append(i)
+        b.append(i)
+    for a in range(1,21):
+        for  b in range(1,21):
+            hipo = sqrt(a**2 + b**2)
+            if (hipo < 20) and (hipo%1==0):
+                h = int(hipo)
+                print(f'1.Kenar: {a}, İkinci Kenar: {b}, Hipotenüs: {h}')
+    print("Programdan Çıkılıyor...")
+    sleep(3)
+    quit()
+                    </textarea>
+        </ul>
+        
+
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
