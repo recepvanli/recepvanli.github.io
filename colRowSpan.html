@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            td,tr {
+                width: 50px;
+                height: 50px;
+            }
+            td[colspan="5"],td[colspan="3"]{
+                background-color:cadetblue;
+            }
+            td[rowspan="3"]{
+                background-color:coral;
+            }
+        </style>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        <ul>
+            <li>colspan ve rowspan kullanımı: tablo uygulaması</li><br><br>
+            <table id="birinci" border="1">
+                <tr>
+                    <td colspan="3">colspan 3</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+            <table id="ikinci" border="1"><br>
+                <tr>
+                    <td rowspan="3" style="writing-mode:vertical-rl;">rowspan 3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table><br>
+            <table id="ucuncu" border="1" style="clear:left ;">
+                <tr>
+                    <td colspan="4" rowspan="2">colspan:4, rowspan:2</rowspan:2></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td rowspan="2" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="writing-mode: vertical-lr;">rowspan 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" ></td>
+                    <td colspan="5">colspan 5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </ul>
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
