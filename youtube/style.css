@@ -1,0 +1,23 @@
+
+body
+{
+    zoom:80%;
+    margin-left: 5%;
+}
+*{
+    font-family: Helvetica;
+    color: white;
+}
+*:visited{
+    text-decoration: none;
+}
+*:active{
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    border:hidden 1px white;
+    vertical-align: top;
+}
