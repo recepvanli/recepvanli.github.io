@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a><br>
+        <ul>
+            <li>Öğrenci numarası ve sınav bilgilerini alarak ortalama ve geçme durumu hesaplama.</li>
+        </ul><br>
+        <textarea>
+
+        #include<stdio.h>
+        #include<conio.h>
+        main()
+        {
+            int s,k=0,m=3,n=3; float ogr[11][4];
+        bsl:
+            printf("\t\t _ rcp _\n");
+        dvm:
+            printf("\n Lutfen ogrenci bilgilerini giriniz: \n");
+            for(s=1;s<=m;s++)
+            {
+                printf("\n\n %d. ogrenci numarasini giriniz: ",s);
+                scanf("%f",&ogr[s][0]);
+                for(k=1;k<=n-1;k++)
+                {
+                    printf("\t %d. sinav notunu gir: ",k);
+                    scanf("%f",&ogr[s][k]);
+                }
+                ogr[s][3]=(ogr[s][1]*0.40)+(ogr[s][2]*0.60);
+                printf("\tHesaplanan ortalama not= %3.2f ",ogr[s][3]);
+            }
+        yaz:
+            printf("\n\n Girilen ve Hesaplanan ogrenci bilgileri \n\n");
+            printf("\t OgrNo   \t 1.snv \t2.snv \tOrtalama \tSonuc \n");
+            printf("\t -----\t\t------\t------\t--------\t------\n");
+            for(s=1;s<=m;s++)
+            {
+                for(k=0;k<=n;k++)
+                {
+                    printf("\t %3.2f ",ogr[s][k]);
+                }
+                if(ogr[s][3]<60)
+                        printf("\t\tKaldi\n");
+                else
+                        printf("\t\tGecti\n");
+            }
+        son:
+            printf("Program Bitti...");
+            getch();
+        }
+
+        </textarea>
+        <ul><li><em>Not: Öğrenci sayısını artırmak için 'n'yi artırınız.</em></li></ul>
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
