@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a><br>
+        <ul>
+            <li>Marka ve ciro bilgisi verilen şirketleri, ciroya göre sıralama</li>
+        </ul><br>
+        <textarea>
+
+            #include <stdio.h>
+            #include <conio.h>
+            int main()
+            {
+                int boy[30][30];
+                int i,x,y,gec=0,n=5;
+            bsl:
+                printf("\t\t\t _ rcp _ \n\n");
+            dvm:
+                printf("\nLutfen ciro ve marka bilgilerini giriniz: \n");
+                for(i=0;i<=n;i++)
+                {
+                    printf("%d .markayi giriniz: ",i);
+                    scanf("%d",&boy[i][0]);
+                    printf("%d .markanin ciro bilgisini giriniz: ",i);
+                    scanf("%d",&boy[i][1]);
+                }
+            sirala:
+                for(x=0;x<=n-1;x++)
+                {
+                    for(y=x+1;y<=n;y++)
+                    {
+                        if((int)boy[x][1]<(int)boy[y][1])
+                        {
+                            gec=boy[x][1];
+                            boy[x][1]=boy[y][1];
+                            boy[y][1]=gec;
+                            gec=boy[x][0];
+                            boy[x][0]=boy[y][0];
+                            boy[y][0]=gec;
+                        }
+                    }
+                }
+            yaz:
+                printf("\nSiralanmis ciro bilgileri: \n\n");
+                for(i=0;i<=n;i++)
+                    {
+                        printf("%d.yuksek ciro >>> \[%5d numarali marka , ",i+1,boy[i][0]);
+                        printf("%5d TL\]\n",boy[i][1]);
+                    }
+            son:
+                printf("\n\nProgram bitti...");
+                getch();
+            }
+                
+
+        </textarea>
+        <ul><li><em>Not: Markayı ve ciroyu maksimum 5 haneli sayısal veri olarak giriniz. Aksi halde hata verir.(güncellenecektir)</em></li></ul>
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
