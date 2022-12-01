@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        <ul>
+            <li><a>C program dili kullanarak vücut kitle endeksini hesaplama</a></li>
+        </ul>
+        <textarea>
+
+    #include<stdio.h>
+        #include<conio.h>
+        #include<stdlib.h>
+        main()
+        {
+            int y,n,i,a=1;
+            char hn[15],hsn[15];
+            float b,k,bko;
+        bsl:
+                printf("Hasta sayisini giriniz: ");scanf("%d",&n);
+                for(i=1;i<=n;i++)
+                {
+                printf("\n%d.Hastanin;\nAdini giriniz: ",i);scanf("%s",&hn);
+                printf("Soyadini giriniz: ",i);scanf("%s",&hsn);
+                printf("Boyunu giriniz: ");scanf("%f",&b);
+                printf("Yasini giriniz: ");scanf("%d",&y);
+                printf("Kilosunu giriniz: ");scanf("%f",&k);
+                printf("\n%d. Hastanin;\nAdi Soyadi: %s %s\n",i,hn,hsn);
+                printf("Boyu:       %.2f cm\nYasi:       %d\nKilosu:     %.2f kg\n",b,y,k);
+        
+                bko=(k/((b*b)/10000));
+                printf("BK Orani:   %.2f\t\t>>>sonuc: ",bko);
+                if(bko<21) printf("Hasta zayif\n");
+                else if(bko>20 && bko<26) printf("Hasta orta\n");
+                else printf("Hasta sisman\n");
+        
+                }
+            printf("\n\nBitirmek icin sifira basiniz...");scanf("%d",&a);printf("\n");
+            if(a==0) goto son;
+            else goto bsl;
+        son:
+                printf("\n\n\tprogram btti\n");getch();
+        }
+                
+        </textarea>
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
