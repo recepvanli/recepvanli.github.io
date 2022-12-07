@@ -1,0 +1,7 @@
+<frame scrollbar="no">
+<frameset border="4" frameset>
+<frame marginwidth="20">
+<frameset cols = "30%, *, 30%">
+https://www.w3.org/TR/html4/present/frames.html
+noresize 
+scrolling = auto|yes|no
