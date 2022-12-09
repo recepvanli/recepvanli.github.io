@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+    <head >
+        <link href="tasarim.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Recep VANLI</title>
+
+    </head>
+    <body id="badi" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom: 10px; " title="End of Page" alt="end"></a>
+        <a href="index.html" title="Homepage">ANASAYFA</a>
+        <ul>
+            <li>switch-case kullanarak basit hesap makinesi yapımı</li><br><br>
+            <textarea>
+
+        #include<stdio.h>
+        #include<conio.h>
+        main()
+        {
+            char x;
+            int say1,say2;
+            printf("Bir islem sec:\n1.Toplama\n2.Cikarma\n3.Carpma\n4.Bolme\n\n");x=getch();
+            printf("Sayi 1 giriniz\t");scanf("%d",&say1);
+            printf("Sayi 2 giriniz\t");scanf("%d",&say2);
+            switch (x)
+            {
+                case '1':printf("\n%d + %d = %d",say1,say2,say1+say2);break;
+                case '2':printf("\n%d - %d = %d",say1,say2,say1-say2);break;
+                case '3':printf("\n%d * %d = %d",say1,say2,say1*say2);break;
+                case '4':printf("\n%d / %d = %d",say1,say2,say1/say2);break;
+            }
+        
+            getch();
+        }
+                
+
+            </textarea>
+        </ul>
+    </body>
+    <footer>
+        <a href="https://www.linkedin.com/in/recepvanli/" target="_blank" class="contact">contact: recepvanli@hotmail.com</a>
+        <br><br>
+
+    </footer>
+    <div id="end" style="font-size:0px;"></div>
+</html>
+
+<!--sag tık engelleyici-->
+<!--oncontextmenu="return false" onselectstart="return false" ondragstart="return false"-->
