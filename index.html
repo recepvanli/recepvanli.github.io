@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta charset="utf-8">
         <title>Recep Vanlı - mynotes</title>
         <!--background-image: linear-gradient(to right, rgb(0,255,0) , rgb(0,200,100), rgb(0,0,255));-->
         <!--background-image: linear-gradient(to right, rgb(22, 91, 51) , rgb(20, 107, 58),rgb(248, 178, 41), rgb(234, 70, 48),rgb(187, 37, 40));-->
+    
+
         <style>
             
             body {
-                background-image: url(bgimg.png);
+                background-color:whitesmoke;
                 background-position: center; /* Center the image */
-                background-repeat: no-repeat; /* Do not repeat the image */
-                background-size: cover; 
                 position: relative;
-                border: solid 3px;
+                border-left: solid 5px;
+                border-color:black;
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 5%;
-                width:40%;
+                width:60%;
                 padding: 3%;
             }
 
@@ -30,7 +32,7 @@
 
             a {
                 font-family: Helvetica;
-                font-size: 12px;
+                font-size:14px ;
             }
 
             a:link, :visited {
@@ -40,6 +42,7 @@
 
             body a.baslik {
                 font-size: 16px;
+                text-align: left;
             }
 
             .contact{
@@ -56,14 +59,40 @@
                 border-top: 0px;
                 border-collapse: collapse;
             }
+            #santa{
+                position:fixed;
+                right: 40px;
+                bottom: 5px;
+                width:35%;
+            }
+            
+
+            @media screen and (max-width: 1023px) 
+            {
+                a {
+                font-size:12px ;
+                }}
+            @media screen and (max-width: 480px){
+                body
+                {
+                    font-size: 12px;
+                    position: relative;
+                    border-left: hidden;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 5%;
+                    width:95%;
+                    padding: 3%;
+                }
+            }
         </style>
     </head>
     <body>
         <!-- <img src="badanaci.png" style="position:fixed;right:30px;bottom:1px;width:300px;" title="Belki de bu yüzden, yalnızca cesurların işidir badana."></img> -->
-        <img src="santa.png" style="position:fixed;right: 10px;bottom: 5px;width:35%;" title="Welcome 2019"></img>
-        <a href="#top"><img src="upArrow.png" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
-        <a href="#end"><img src="downArrow.png"style="position:fixed; right:10px;bottom:10px" title="End of Page" alt="end"></a>
-        <a class="baslik">Bilgisayar Programcılığı Bölümü Çalışmalarım</a>
+        <img src="santa.png" id="santa" title="Welcome 2019"></img>
+        <a href="#top"><img src="upArrow.png" class="ok" style="position:fixed; right:10px;top:10px" title="Top of Page" alt="top"></a>
+        <a href="#end"><img src="downArrow.png" class="ok" style="position:fixed; right:10px;bottom:10px" title="End of Page" alt="end"></a>
+        <br><a class="baslik">Bilgisayar Programcılığı Bölümü Çalışmalarım</a>
         <ul>
             <li><a href="ilkSayfam2.html">18.10.2022 İlk web sayfa tasarımım(html)</a></li>
             <li><a href="gunestutulmasi.html">25.10.2022 Sayfa içi link verme uygulaması: Güneş Tutulması(html,css)</a></li>
@@ -111,5 +140,6 @@
     <footer>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSehodYezFLFthxJZMyE1QQYEAgvmd-5jzUbbPgsab2ElZcZmA/viewform?embedded=true" target="_blank" class="contact" title="Send Feedback Please">contact: recepvanli@hotmail.com</a>
         <br><br>
+       
     <footer>
 </html>
