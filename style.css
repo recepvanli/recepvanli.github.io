@@ -1,0 +1,65 @@
+body {
+    background-color:darkcyan;
+    background-position: center; /* Center the image */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width:60%;
+    padding: 3%;
+}
+
+li:hover {
+    padding-left: 10px;
+    border: solid 1px black;
+    border-style:dotted;
+}
+
+a {
+    font-family: Helvetica;
+    font-size:14px ;
+}
+a:link, :visited {
+    color: rgb(18, 18, 18);
+    text-decoration: none;
+}
+
+body a.baslik {
+    font-size: 16px;
+    text-align: left;
+}
+
+.contact{
+    position:fixed; bottom: 1%;
+}
+
+.contact-hr {
+    width:40%;
+    position: fixed; 
+    bottom: 3%;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-collapse: collapse;
+}
+
+/*responsive tasarım kodları*/
+@media screen and (max-width: 1023px) 
+{
+    a {
+    font-size:12px ;
+    }}
+@media screen and (max-width: 480px){
+    body
+    {
+        font-size: 12px;
+        position: relative;
+        border-left: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width:95%;
+        padding: 3%;
+    }
+}
