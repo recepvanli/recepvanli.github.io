@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul#main li{
+    float:left;
+    position: relative;
+    width:120px;
+}
+ul#main li ul{
+    display: none;
+    position:absolute;
+    left:0;
+    top:30px;
+}
+ul li a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: darkcyan;
+    border-bottom:5px solid black;
+    border-left:5px solid gray;
+    color: white;
+    text-align: center;
+}
+ul li a:hover{
+    background-color: indigo;
+}
+ul#main li:hover ul{
+    display: block;
+}
+ul#main li ul li#deger ul{
+    display: none;
+}
+ul#main li ul li#deger:hover ul{
+    display: block;
+    margin-left:125px;
+    margin-top: -30px;
+}
