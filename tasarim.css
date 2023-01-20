@@ -1,92 +1,219 @@
 
 
-* {
-    font-family: Helvetica;
-    font-size: 12px;
+table{
+    border-collapse: collapse;
+    border-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
-body {
-    background-color: bisque;
-    border: solid 3px black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    width:64%;
-    padding: 3%;
-    text-align: justify;
-    /*seçim engelleyici*/
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+#logo{
+    position:absolute;
+    margin-left: 0px;
+    margin-top:-5px;
+    width:35px;
 }
-
-a {
-    font-family: Helvetica;
+td{
+    width: 150px;
 }
-
-a.contact {
-    text-align: right;
+td #baslik{
+    font-family:Helvetica;
 }
-
-a:link, :visited {
-    color: rgb(18, 18, 18);
+a{
+    line-height: 20px;
     text-decoration: none;
-}
-
-a.contact {
-    font-size:12px;
-    font-style: italic;
-    text-align: right;
-}
-a.baslik {
-    font-weight: 700;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table.tablo, th, td {
-    font-family: Helvetica;
-    border: solid 1px gray;
-    border-collapse: collapse;
-}
-
-td {
-    text-align: center;
+    font-family:Helvetica;
     font-size: 12px;
-    width: 20%;
+    color:rgb(120,120,120);
+}
+ul#main li a:hover{
+    color:black;
+}
+td.menu{
+    border-top: 1px black solid;
+}
+tr td hr{
+    width:125px;
+    border-top:hidden;
+    border-right:hidden;
+    border-bottom:1px solid rgb(180, 180, 180);
+    border-left: hidden; height:10px;
+    margin-left:0px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul#main li{
+    float:left;
+    position: relative;
+    width:120px;
+    z-index: 5;
+}
+ul#main li ul{
+    display: none;
+    position:absolute;
+    left:0;
+    top:30px;
+}
+ul#main li a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid grey;
+    border-style:dotted ;
+    background-color: white;
+}
+ul li a:hover{
+    z-index: 5;
+}
+ul#main li:hover ul{
+    display: block;
+}
+ul#main li ul li ul#deger{
+    display: none;
+}
+ul#main li ul li#degerler:hover ul#deger{
+    display: block;
+    margin-left:120px;
+    margin-top: -30px;
+    z-index: 5;
+}
+div#vl{
+    border-left: 1px solid rgb(220, 220, 220);
+    height: 150px;
+    position: absolute;
+    margin-left:450px;
+    margin-top:-125px;
+}
+div#hl{
+    width: 1000px;
+    position: absolute;
+    color:rgb(220, 220, 220);
+    z-index:3 ;
+    border-top: 5px solid rgb(240, 240, 240);
+    margin-top: 50px;
 }
 
-.contact {
-    position:fixed; bottom: 1%;
-    color: black;
-    font-style: italic;
-    margin-bottom: 2%;
-    }
-
-.contact-hr {
-    
-    width: 64%;
-    position: fixed; 
-    bottom: 3%;
-    border-bottom: 1px hidden black;
-    border-left: hidden;
-    border-right: hidden;
-    border-top: hidden;
-    border-collapse: collapse;
-    padding: 0%;
+div#hl2{
+    width: 1000px;
+    position: absolute;
+    color:rgb(220, 220, 220);
+    z-index:3 ;
+    border-top: 5px solid rgb(240, 240, 240);
+    margin-top: 100px;
+    margin-left: 25px;
+}
+table#hg{
+    position:absolute ;
+    margin-top: -500px;
+    margin-right: 0;
+    margin-left: 600px;
+    width: 450px;
+    padding: 30px;
+}
+table#tth li{
+    list-style:square ;
+}
+div#wm{
+    border-top: 4px solid rgb(220, 220, 220);
+    width: 400px;
+    position: absolute;
+    margin-left:0px;
+    margin-top:0px;
+}
+div#bg{
+    background-color:rgb(245, 245, 245);
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -60px;
+    z-index: -1;
+    width: 475px;
+    height: 350px;
+}
+div#bg2{
+    background-color:rgb(245, 245, 245);
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -20px;
+    z-index: -1;
+    width: 475px;
+    height: 250px;
+}
+td#bottom1{
+    text-align: left;
+    width: 1000px;
+    margin-top:110px;
+    position: absolute;
+}
+td#bottom2{
+    text-align: center;
+    width: 1000px;
+    margin-top:110px;
+    position: absolute;
+}
+td#bottom3{
+    text-align: right;
+    width: 1000px;    
+    margin-top:110px;
+    position: absolute;
+}
+td.bot{
+    position: relative;
+    margin-left: 25px;
+    padding: 15px 0px 20px 0px ;
+}
+#title{
+    background-color: black;
+    color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 90px;
+    position: relative;
+}
+#subtitle{
+    font-size: 50px;
+    margin-left: 0;
+    background-color: dimgray;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: whitesmoke;
 }
 
-textarea{
-    width:90%;
-    height:200px;
-    resize:none;
-    font-family:'Courier';
-    background-color:rgb(0,30,30);
-    color:rgb(100,225,200);
+
+.cerceve{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border:1px hidden black;
+    box-sizing: border-box; /*çerçeveyi içe doğru verir*/
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.galeri{
+    position: relative;
+    width: 400%;
+    left: 0%;
+    animation: 20s slayt infinite;
+}
+.galeri img{
+    width: 25%;
+    float:left;
+}
+@keyframes slayt{
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left:-200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    90%{left: -300%;}
+}
+div#yazi{
+    position: absolute;
+    margin-top:-200px;
+
 }
