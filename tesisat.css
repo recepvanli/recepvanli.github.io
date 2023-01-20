@@ -15,17 +15,6 @@ table{
 td{
     width: 150px;
 }
-td#img{
-    background-image: url(http://cdn.livedemo00.template-help.com:82/wt_45031/images/slide-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: 1060px;
-    position:relative;
-    width: 1000px;
-    height: 500px;
-    
-
-}
 td #baslik{
     font-family:Helvetica;
 }
@@ -191,5 +180,40 @@ td.bot{
     padding-left: 15px;
     padding-right: 15px;
     color: whitesmoke;
+}
+
+
+.cerceve{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border:1px hidden black;
+    box-sizing: border-box; /*çerçeveyi içe doğru verir*/
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.galeri{
+    position: relative;
+    width: 400%;
+    left: 0%;
+    animation: 20s slayt infinite;
+}
+.galeri img{
+    width: 25%;
+    float:left;
+}
+@keyframes slayt{
+    0%{left: 0%;}
+    20%{left: 0%;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left:-200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    90%{left: -300%;}
+}
+div#yazi{
+    position: absolute;
+    margin-top:-200px;
 
 }
